@@ -5,7 +5,7 @@ import AlertContext from '../../Context/Alerts/AlertContext'
 
 function UserSearch() {
   const [text, setText] = useState('')
-  const { users, clearUsers, dispatch } = useContext(GithubContext)
+  const { users, dispatch } = useContext(GithubContext)
   const { setAlert } = useContext(AlertContext)
 
   const handleChange = (e) => {
@@ -45,7 +45,10 @@ function UserSearch() {
       </div>
       {users?.length > 0 && (
         <div>
-          <button className='btn btn-large btn-ghost' onClick={clearUsers}>
+          <button
+            className='btn btn-large btn-ghost'
+            onClick={() => dispatch({ type: 'CLEAR_USERS' })}
+          >
             Clear
           </button>
         </div>
