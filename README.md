@@ -2,6 +2,14 @@
 
 > React app to search Github profiles. This app uses the Context API along with the useContext and useReducer hooks for state management.
 
+## Tech Stack
+
+| Area       | Technology            |
+| ---------- | --------------------- |
+| Frontend   | ReactJS, React-Router |
+| CSS        | Tailwind, Daisy UI    |
+| Deployment | Vercel                |
+
 ## Demo
 
 https://github-finder-eight-ebon.vercel.app/
